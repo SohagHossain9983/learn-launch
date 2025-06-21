@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dfs</title>
+</head>
+
+<body>
+    <h1 id="title">Create box templete by js without style.css</h1>
+
+    <script>
+        const headtitle = document.getElementById('title')
+        console.log(headtitle)
+        headtitle.style.color = 'red'
+        headtitle.style.textAlign = "center"
+
+        // main box
+        const wrapar = document.createElement('div');
+        wrapar.id = "wrapar";
+        wrapar.style.width = "1500px"
+        wrapar.style.height = "650px"
+        wrapar.style.backgroundColor = "#dfdfdf"
+        wrapar.style.display = "flex"
+        document.body.appendChild(wrapar)
+
+        // left side box
+        const leftSideBox = document.createElement("div")
+        leftSideBox.style.width = "500px"
+        leftSideBox.style.height = "650px"
+        leftSideBox.style.position = "relative"
+        wrapar.appendChild(leftSideBox)
+
+        const leftSide1stBox = document.createElement("div");
+        leftSide1stBox.id = "leftSide1stBox";
+        leftSide1stBox.style.width = "250px"
+        leftSide1stBox.style.height = "380px"
+        leftSide1stBox.style.backgroundColor = "white"
+        leftSide1stBox.style.borderRadius = "5px"
+        leftSide1stBox.style.display = "flex"
+        leftSide1stBox.style.alignItems = "center"
+        leftSide1stBox.style.justifyContent = "center"
+        leftSide1stBox.style.fontSize = "30px"
+        leftSide1stBox.style.fontWeight = "600"
+        leftSide1stBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        leftSide1stBox.style.position = "absolute"
+        leftSide1stBox.style.top = "20px"
+        leftSide1stBox.style.left = "20px"
+        leftSide1stBox.innerText = " box-1 "
+        leftSideBox.appendChild(leftSide1stBox)
+
+        const leftSide2ndBox = document.createElement("div");
+        leftSide2ndBox.id = "leftSide2ndBox";
+        leftSide2ndBox.style.width = "400px"
+        leftSide2ndBox.style.height = "150px"
+        leftSide2ndBox.style.backgroundColor = "white"
+        leftSide2ndBox.style.borderRadius = "5px"
+        leftSide2ndBox.style.display = "flex"
+        leftSide2ndBox.style.alignItems = "center"
+        leftSide2ndBox.style.justifyContent = "center"
+        leftSide2ndBox.style.fontSize = "30px"
+        leftSide2ndBox.style.fontWeight = "600"
+        leftSide2ndBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        leftSide2ndBox.style.position = "absolute"
+        leftSide2ndBox.style.top = "450px"
+        leftSide2ndBox.style.left = "20px"
+        leftSide2ndBox.innerText = " Box-2 "
+        leftSideBox.appendChild(leftSide2ndBox)
+
+        const leftSide3rdBox = document.createElement("div");
+        leftSide3rdBox.id = "leftSide3rdBox";
+        leftSide3rdBox.style.width = "150px"
+        leftSide3rdBox.style.height = "380px"
+        leftSide3rdBox.style.backgroundColor = "white"
+        leftSide3rdBox.style.borderRadius = "5px"
+        leftSide3rdBox.style.display = "flex"
+        leftSide3rdBox.style.alignItems = "center"
+        leftSide3rdBox.style.justifyContent = "center"
+        leftSide3rdBox.style.fontSize = "30px"
+        leftSide3rdBox.style.fontWeight = "600"
+        leftSide3rdBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        leftSide3rdBox.style.position = "absolute"
+        leftSide3rdBox.style.top = "20px"
+        leftSide3rdBox.style.left = "330px"
+        leftSide3rdBox.innerText = " Box-3"
+        leftSideBox.appendChild(leftSide3rdBox)
+
+        // middle box
+        const middleBox = document.createElement("div")
+        middleBox.style.width = "500px"
+        middleBox.style.height = "650px"
+        middleBox.style.position = "relative"
+        wrapar.appendChild(middleBox)
+
+        const middle1stBox = document.createElement("div")
+        middle1stBox.id = "middle1stBox"
+        middle1stBox.style.width = "460px"
+        middle1stBox.style.height = "200px"
+        middle1stBox.style.backgroundColor = "white"
+        middle1stBox.style.borderRadius = "5px"
+        middle1stBox.style.display = "flex"
+        middle1stBox.style.alignItems = "center"
+        middle1stBox.style.justifyContent = "center"
+        middle1stBox.style.fontSize = "30px"
+        middle1stBox.style.fontWeight = "600"
+        middle1stBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        middle1stBox.style.position = "absolute"
+        middle1stBox.style.top = "20px"
+        middle1stBox.style.left = "20px"
+        middle1stBox.innerText = " sohog"
+        middleBox.appendChild(middle1stBox)
+
+        const middle2ndBox = document.createElement("div")
+        middle2ndBox.id = "middle2ndBox"
+        middle2ndBox.style.width = "460px"
+        middle2ndBox.style.height = "300px"
+        middle2ndBox.style.backgroundColor = "white"
+        middle2ndBox.style.borderRadius = "5px"
+        middle2ndBox.style.display = "flex"
+        middle2ndBox.style.alignItems = "center"
+        middle2ndBox.style.justifyContent = "center"
+        middle2ndBox.style.fontSize = "30px"
+        middle2ndBox.style.fontWeight = "600"
+        middle2ndBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        middle2ndBox.style.position = "absolute"
+        middle2ndBox.style.top = "260px"
+        middle2ndBox.style.left = "20px"
+        middle2ndBox.innerText = " Box-5"
+        middleBox.appendChild(middle2ndBox)
+
+        // right box
+        const rightBox = document.createElement("div")
+        rightBox.style.width = "500px"
+        rightBox.style.height = "650px"
+        rightBox.style.position = "relative"
+        wrapar.appendChild(rightBox)
+
+        const right1stBox = document.createElement("div")
+        right1stBox.id = "right1stBox"
+        right1stBox.style.width = "200px"
+        right1stBox.style.height = "380px"
+        right1stBox.style.backgroundColor = "white"
+        right1stBox.style.borderRadius = "5px"
+        right1stBox.style.display = "flex"
+        right1stBox.style.alignItems = "center"
+        right1stBox.style.justifyContent = "center"
+        right1stBox.style.fontSize = "30px"
+        right1stBox.style.fontWeight = "600"
+        right1stBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        right1stBox.style.position = "absolute"
+        right1stBox.style.top = "20px"
+        right1stBox.style.left = "20px"
+        right1stBox.innerText = " Box-6"
+        rightBox.appendChild(right1stBox)
+
+        const right2ndBox = document.createElement("div")
+        right2ndBox.id = "right2ndBox"
+        right2ndBox.style.width = "200px"
+        right2ndBox.style.height = "200px"
+        right2ndBox.style.backgroundColor = "white"
+        right2ndBox.style.borderRadius = "5px"
+        right2ndBox.style.display = "flex"
+        right2ndBox.style.alignItems = "center"
+        right2ndBox.style.justifyContent = "center"
+        right2ndBox.style.fontSize = "30px"
+        right2ndBox.style.fontWeight = "600"
+        right2ndBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        right2ndBox.style.position = "absolute"
+        right2ndBox.style.top = "20px"
+        right2ndBox.style.left = "250px"
+        right2ndBox.innerText = " Box-6"
+        rightBox.appendChild(right2ndBox)
+        
+        const right3rdBox = document.createElement("div")
+        right3rdBox.id = "right3rdBox"
+        right3rdBox.style.width = "460px"
+        right3rdBox.style.height = "150px"
+        right3rdBox.style.backgroundColor = "white"
+        right3rdBox.style.borderRadius = "5px"
+        right3rdBox.style.display = "flex"
+        right3rdBox.style.alignItems = "center"
+        right3rdBox.style.justifyContent = "center"
+        right3rdBox.style.fontSize = "30px"
+        right3rdBox.style.fontWeight = "600"
+        right3rdBox.style.boxShadow = "  1px 1px 8px rgba(0,0,0,0.5)"
+        right3rdBox.style.position = "absolute"
+        right3rdBox.style.top = "450px"
+        right3rdBox.style.left = "20px"
+        right3rdBox.innerText = " Box-7"
+        rightBox.appendChild(right3rdBox)
+    </script>
+</body>
+
+</html>
