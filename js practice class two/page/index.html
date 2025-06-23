@@ -1,14 +1,114 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>js practice class two</h1>
+    <script>
+        var sohag = 'I am sohag'
+        console.log(sohag)
+        // FUNCTION
+        // function 01
+        function functionName() {
+            console.log('This is my new function')
+        }
+        functionName()
+
+        // function 03
+        function plus(a, b) {
+            const result = a + b;
+            return result;
+        }
+        console.log(plus(10, 10));
+
+        // function 04
+        function minus(a, b) {
+            const result = a - b;
+            return result;
+        }
+        console.log(minus(10, 10));
+
+        // function 05
+        function multiply(a, b) {
+            const result = a * b;
+            return result;
+        }
+        console.log(multiply(10, 10));
+
+        // function 06
+        function plusMinus(a, b, c, d) {
+            const result1 = a + b;
+            const result2 = c - d;
+            const result = result1 + result2;
+            return result;
+        }
+        console.log(plusMinus(100, 50, 200, 50))
+
+        // function 07
+        function multiplayDevid(a, b, c, d) {
+            const result1 = a * b;
+            const result2 = c / d;
+            const result = result1 + result2;
+            return result;
+        }
+        console.log(multiplayDevid(10, 10, 100, 10))
+
+        // function 08
+        function personData(name, age, maritalStatus) {
+            let result = `My name is ${name}.`
+            if (age < 20) {
+                result += ` I ma unmqrried`
+                return result;
+            } else {
+                result += ` I ma maddied`
+                return result
+            }
+        }
+        console.log(personData("sohag", 17, "Teacher"))
+
+        // CONDITION
+        // condition 01
+        const age = 20;
+        if (age < 10) {
+            console.log('you are maddied')
+        } else {
+            console.log('You are unmarried')
+        }
+
+        // condition 02
+        const myAge = 20;
+        if (myAge < 25) {
+            console.log('you are maddied')
+        } else {
+            console.log('You are unmarried')
+        }
+
+        // condition 03
+        const personAge = 20;
+        if (personAge < 5) {
+            console.log("You are baby");
+        } else if (personAge < 10) {
+            console.log("You are young");
+        } else if (personAge < 20) {
+            console.log("You are old");
+        } else {
+            console.log("your are sick");
+        }
+
+        // if (age < 18) {
+        //   console.log("You are not eligible to vote");
+        // } else {
+        //   console.log("You are eligible to vote");
+        // }
+
+
+
+    </script>
 </body>
+
 </html>
