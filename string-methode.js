@@ -14,7 +14,21 @@ var sohag = 'I am sohag';
 // console.log(sohag.substr(9, 6))
 // console.log(sohag.toUpperCase())
 // console.log(sohag.toLowerCase())
-console.log(sohag.replaceAll("o", "ho"))
-console.log(sohag.replaceAll("I", "My"))
-console.log(sohag.replaceAll("sohag", "riday"))
-console.log(sohag.concat(' hossain'))
+// console.log(sohag.replaceAll("o", "ho"))
+// console.log(sohag.replaceAll("I", "My"))
+// console.log(sohag.replaceAll("sohag", "riday"))
+// console.log(sohag.concat(' hossain'))
+// console.log(sohag.match('ag'))
+// console.log(sohag.includes("jhjhj"))
+// console.log(sohag.indexOf("g"))
+// console.log(sohag.lastIndexOf("s"))
+const today = new Date ();
+console.log(today);
+console.log(today.getDate());
+console.log(today.getDay());
+console.log(today.getMonth());
+console.log(today.getFullYear());
+console.log(today.getHours());
+console.log(today.getTime());
+console.log(today.getMinutes());
+console.log(today.getTimezoneOffset());
