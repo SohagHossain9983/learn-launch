@@ -94,15 +94,15 @@
 
 
 
-example 7
-var newNumber = 10
-for (var i = 1; i <= newNumber; i++) {
-    var results = "";
-    for (var jk = 1; jk <= newNumber; jk++) {
-        results += " * ";
-    }
-    console.log(results)
-}
+// example 7
+// var newNumber = 10
+// for (var i = 1; i <= newNumber; i++) {
+//     var results = "";
+//     for (var jk = 1; jk <= newNumber; jk++) {
+//         results += " * ";
+//     }
+//     console.log(results)
+// }
 //  *  *  *  *  *  *  *  *  *  * 
 //  *  *  *  *  *  *  *  *  *  * 
 //  *  *  *  *  *  *  *  *  *  *
